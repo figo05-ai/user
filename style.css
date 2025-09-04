@@ -1,0 +1,179 @@
+* {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #E9E3DF;
+        }
+
+        .titel {
+            width: 100%;
+            height: 120px;
+            background-color: #394d74;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5%;
+        }
+
+        .titel p {
+            color: #ffffff;
+            font-size: 28px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .titel img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 3px solid white;
+            flex-shrink: 0;
+        }
+
+        .Continier {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+            gap: 15px;
+        }
+
+        .item {
+            width: 75%;
+            height: 150px;
+            background-color: black;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+            border-radius: 10px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.5s ease;
+            gap: 20px;
+        }
+
+        .item img {
+            width: 120px;
+            height: auto;
+            flex-shrink: 0;
+            border-radius: 10px;
+            transition: all 0.5s ease;
+        }
+
+        .text-area {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: all 0.5s ease;
+            margin-top: 90px;
+        }
+
+        .text-area h2 {
+            text-transform: capitalize;
+            font-size: 32px;
+
+            transition: all 0.5s ease;
+        }
+
+        .info {
+            margin-top: 10px;
+            font-size: xx-large;
+            font-weight: bold;
+            opacity: 0;
+            transition: all 0.5s ease;
+            text-align: center;
+        }
+
+        #pro1 {
+            background: linear-gradient(to right, #012c4e, #797979);
+        }
+
+        #pro2 {
+            background: linear-gradient(to right, #013355, #797979);
+        }
+
+        #pro3 {
+            background: linear-gradient(to right, #2a6077, #797979);
+        }
+
+        #pro4 {
+            background: linear-gradient(to right, #976d24, #797979);
+        }
+
+        #pro5 {
+            background: linear-gradient(to right, #4e4f50, #797979);
+        }
+
+        #pro6 {
+            background: linear-gradient(to right, #ac181a, #797979);
+        }
+
+        #pro7 {
+            position: relative;
+            background: linear-gradient(to right, #465C88, #797979);
+
+        }
+
+        #pro7 .text-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.10s ease;
+        }
+
+        #pro7 .text-area h2 {
+            font-size: 32px;
+            transition: all 0.2s ease;
+        }
+
+        #pro7 .text-area .info {
+            opacity: 0;
+            transition: all 0.5s ease;
+        }
+
+        #pro7:hover .text-area h2 {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 40px;
+            font-weight: bold;
+            transition: all 0.5s ease;
+        }
+
+        #pro7:hover .text-area .info {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 1;
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+
+        .item:hover {
+            height: 400px;
+        }
+
+        .item:hover img {
+            width: 25%;
+        }
+
+        .item:hover .text-area h2 {
+            transform: translateY(-110px);
+        }
+
+        .item:hover .info {
+            opacity: 1;
+        }
